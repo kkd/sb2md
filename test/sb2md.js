@@ -1,5 +1,13 @@
 import test from 'ava';
 const { sb2md } = require('../lib/sb2md');
+const { Site } = require('../lib/Site');
+
+test('json parse', t => {
+  const site = new Site('../test/test.json');
+  
+  t.is(site.pages().length, 3);
+  t.is(site.pages()[0].title, 'test2');
+})
 
 test('indent', t => {
     t.is(sb2md(' a'), '  - a');
