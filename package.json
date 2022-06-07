@@ -4,7 +4,8 @@
   "description": "Convert Scrapbox notation to Markdown",
   "main": "main.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "site": "node site2sb.js"
   },
   "repository": {
     "type": "git",
